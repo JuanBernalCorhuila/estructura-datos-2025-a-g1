@@ -21,6 +21,7 @@ public class ImprimirDato {
         System.out.println("Estilo 3:");
         datoBasico.Forma3();
 
+
         DatoBasico estudiante = new DatoBasico();
         estudiante.tipoDocumento = "TI";
         estudiante.numeroDocumento = "214324";
