@@ -1,33 +1,38 @@
 package Modelo;
 
 public class Cliente extends Persona {
-    private String raza;
+    private int numCliente;
+    private String historialCompras;
 
-    public Cliente(String nombre, int edad, float peso, String raza){
-        super(nombre,edad,peso);
-        this.raza = raza;
+    public Cliente(String nombre, int edad, String direccion, int numCliente, String historialCompras) {
+        super(nombre, edad, direccion);
+        this.numCliente = numCliente;
+        this.historialCompras = historialCompras;
     }
 
-    public String getRaza() {
-        return raza;
+    public int getNumcliente() {
+        return numCliente;
     }
 
-    public void setRaza(String raza) {
-        this.raza = raza;
+    public void setNumCliente(int numCliente) {
+        this.numCliente = numCliente;
+    }
+
+    public String getHistorialCompras() {
+        return historialCompras;
+    }
+
+    public void setHistorialCompras(String historialCompras) {
+        this.historialCompras = historialCompras;
     }
 
     @Override
-    public void comer(){
-        System.out.println("Soy un perro y estoy comiendo croquetas.");
+    public void tipoPersona() {
+        System.out.println("----CLIENTE IDENTIFICADO----");
     }
 
     @Override
-    public void dormir(){
-        System.out.println("Estoy durmiendo en mi cama.");
-    }
-
-    @Override
-    public void desplazarse(){
-        System.out.println("Estoy corriendo en el parque");
+    public void lugar() {
+        System.out.println("Soy un cliente y vengo a comprar a Alkosto.");
     }
 }

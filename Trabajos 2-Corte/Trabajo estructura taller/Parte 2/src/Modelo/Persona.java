@@ -35,7 +35,6 @@ public abstract class Persona {
         this.direccion = direccion;
     }
 
-    public abstract  void miembro();
-    public abstract void puesto();
-    public abstract void desplazarse();
+    public abstract void tipoPersona();
+    public abstract void lugar();
 }

@@ -1,33 +1,48 @@
 package Modelo;
 
 public class Empleado extends Persona {
-    private String tipoAgua;
+    private String codigoEmpleado;
+    private String cargo;
+    private double salario;
 
-    public Empleado(String nombre, int edad, float peso, String tipoAgua){
-        super(nombre, edad, peso);
-        this.tipoAgua = tipoAgua;
+    public Empleado(String nombre, int edad, String direccion, String codigoEmpleado, String cargo, double salario){
+        super(nombre, edad, direccion);
+        this.codigoEmpleado = codigoEmpleado;
+        this.cargo = cargo;
+        this.salario = salario;
     }
 
-    public String getTipoAgua() {
-        return tipoAgua;
+    public String getCodigoEmpleado() {
+        return codigoEmpleado;
     }
 
-    public void setTipoAgua(String tipoAgua) {
-        this.tipoAgua = tipoAgua;
+    public void setCodigoEmpleado(String codigoEmpleado) {
+        this.codigoEmpleado = codigoEmpleado;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 
     @Override
-    public void comer(){
-        System.out.println("Soy un pez y estoy comiendo algas.");
+    public void tipoPersona() {
+        System.out.println("----EMPLEADO IDENTIFICADO----");
     }
 
     @Override
-    public void dormir(){
-        System.out.println("Estoy durmiendo flotando.");
-    }
-
-    @Override
-    public void desplazarse(){
-        System.out.println("Estoy nadando en el agua");
+    public void lugar(){
+        System.out.println("Soy empleada de Alkosto.");
     }
 }
