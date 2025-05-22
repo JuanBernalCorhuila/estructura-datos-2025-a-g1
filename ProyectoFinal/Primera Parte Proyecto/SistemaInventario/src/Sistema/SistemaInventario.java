@@ -7,7 +7,7 @@ public class SistemaInventario {
         Scanner leer = new Scanner(System.in);
 
         /* Creamos un Map para almacenar los productos con el código como clave
-        Usamos el Treemap para obtener los pares en orden */
+        Usamos el hashmap para acceder a los pares de manera más rápida */
         Map<String, Producto> inventario = new HashMap<>();
 
         //Constante para indicar la cantidad máxima de productos que se pueden registrar
