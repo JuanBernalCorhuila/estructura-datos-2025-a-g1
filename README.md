@@ -3,6 +3,8 @@ hola, soy Juan Camilo Bernal estudiante de ingenieria de sistemas
 
 Este repositorio tiene todo lo relacionado con estructura de datos, tanto parcial, quiz, trabajos y carpetas de lo que hacemos cada semana proporcionadas del repositorio del profesor.
 
+Nota: Este repositorio es nuevo porque tuve unos problemas con el historial del anterior así que opte por crear uno nuevo que contiene todos los archivos del anterior pero ademas se agregaron los trabajos recientes
+
 # Commits 
 ### 📅Actualización semanal de lo hecho en clase
 ### 🧑‍💻Trabajos en código
