@@ -7,7 +7,8 @@ public class Producto {
     private double precio;
 
     // Constructor
-    public Producto(String codigo, String nombre, int cantidad, double precio) {
+    // --- FUNCIONES (Constructor) ---
+    public Producto(String codigo, String nombre, int cantidad, double precio) { // <--- FUNCIÓN: Constructor
         this.codigo = codigo;
         this.nombre = nombre;
         this.cantidad = cantidad;
@@ -15,23 +16,41 @@ public class Producto {
     }
 
     // Getters y Setters
-    public void setNombre(String nombre) {
+    // --- FUNCIONES (Getters) ---
+    public String getCodigo() { // <--- FUNCIÓN: Getter
+        return codigo;
+    }
+
+    public String getNombre() { // <--- FUNCIÓN: Getter
+        return nombre;
+    }
+
+    // --- FUNCIONES (Setters) ---
+    public void setNombre(String nombre) { // <--- FUNCIÓN: Setter
         this.nombre = nombre;
     }
 
-    public void setCantidad(int cantidad) {
+    public int getCantidad() { // <--- FUNCIÓN: Getter
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) { // <--- FUNCIÓN: Setter
         this.cantidad = cantidad;
     }
 
-    public void setPrecio(double precio) {
+    public double getPrecio() { // <--- FUNCIÓN: Getter
+        return precio;
+    }
+
+    public void setPrecio(double precio) { // <--- FUNCIÓN: Setter
         this.precio = precio;
     }
 
     // Método toString para imprimir el producto
+    // --- FUNCIONES (Método toString) ---
     @Override
-    public String toString() {
-        //Se usa el format para alinear el texto
-        return String.format("%-10s %-20s %-10d $%.2f", codigo, nombre, cantidad, precio);
+    public String toString() { // <--- FUNCIÓN: toString (proporciona una representación en String del objeto)
+        // Aseguramos un formato consistente con printf para alineación
+        return String.format("%-10s %-20s %-10d $%-9.2f", codigo, nombre, cantidad, precio);
     }
 }
-
